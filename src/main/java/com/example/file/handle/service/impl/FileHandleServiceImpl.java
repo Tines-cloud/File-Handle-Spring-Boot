@@ -8,11 +8,11 @@ import com.example.file.handle.util.Constant;
 import com.example.file.handle.util.enumerate.ContentType;
 import com.example.file.handle.util.enumerate.ServiceType;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ByteArrayResource;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
@@ -25,30 +25,29 @@ public class FileHandleServiceImpl implements FileHandleService {
 
     @Override
     public String uploadFile(MultipartFile file, ServiceType serviceType, ContentType contentType) {
-
-        if (file.isEmpty()){
+        if (file.isEmpty()) {
             throw new RuntimeException(Constant.FILE_UPLOAD_FAILED_FILE_INVALID);
         }
 
         if (serviceType.equals(ServiceType.GCP)) {
-            return gcpFileHandleService.uploadFile(file,contentType);
+            return gcpFileHandleService.uploadFile(file, contentType);
         } else if (serviceType.equals(ServiceType.S3)) {
-            return s3FileHandleService.uploadFile(file,contentType);
+            return s3FileHandleService.uploadFile(file, contentType);
         } else {
             return Constant.FILE_HANDLE_FAILED_SERVICE_TYPE;
         }
     }
 
     @Override
-    public String deleteFile(String fileName,ServiceType serviceType, ContentType contentType) {
-        if (Objects.equals(fileName, "")){
-            throw new RuntimeException(Constant.FILE_DELETE_FAILED_FILE_INVALID);
+    public String deleteFile(String fileName, ServiceType serviceType, ContentType contentType) {
+        if (Objects.equals(fileName, "")) {
+            throw new RuntimeException(Constant.FILE_NAME_INVALID);
         }
 
         if (serviceType.equals(ServiceType.GCP)) {
-            return gcpFileHandleService.deleteFile(fileName,contentType);
+            return gcpFileHandleService.deleteFile(fileName, contentType);
         } else if (serviceType.equals(ServiceType.S3)) {
-            return s3FileHandleService.deleteFile(fileName,contentType);
+            return s3FileHandleService.deleteFile(fileName, contentType);
         } else {
             return Constant.FILE_HANDLE_FAILED_SERVICE_TYPE;
         }
@@ -62,6 +61,21 @@ public class FileHandleServiceImpl implements FileHandleService {
             return s3FileHandleService.listOfFiles();
         } else {
             return new ArrayList<>();
+        }
+    }
+
+    @Override
+    public ByteArrayResource downloadFile(String fileName, ServiceType serviceType, ContentType contentType) {
+        if (Objects.equals(fileName, "")) {
+            throw new RuntimeException(Constant.FILE_NAME_INVALID);
+        }
+
+        if (serviceType.equals(ServiceType.GCP)) {
+            return gcpFileHandleService.downloadFile(fileName, contentType);
+        } else if (serviceType.equals(ServiceType.S3)) {
+            return s3FileHandleService.downloadFile(fileName, contentType);
+        } else {
+            return new ByteArrayResource(new byte[0]);
         }
     }
 }

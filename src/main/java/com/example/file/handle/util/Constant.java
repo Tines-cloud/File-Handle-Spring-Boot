@@ -4,13 +4,15 @@ import com.example.file.handle.util.enumerate.ContentType;
 
 public class Constant {
     public static final String FILE_HANDLE = "/upload";
-    public static final String FILE_REMOVE = "/upload/{fileName}";
+    public static final String FILE_DOWNLOAD = "/download/{fileName}";
+    public static final String FILE_REMOVE = "/delete/{fileName}";
     public static final String FILE_UPLOAD_FAILED_FILE_INVALID = "File is not valid";
-    public static final String FILE_DELETE_FAILED_FILE_INVALID = "File name is not valid";
-    public static final String FILE_DELETE_FAILED_FILE_NOT_FOUND = "File is not found";
+    public static final String FILE_NAME_INVALID = "File name is not valid";
+    public static final String FILE_NOT_FOUND = "File is not found";
     public static final String FILE_HANDLE_FAILED_SERVICE_TYPE = "Service type is not valid";
     public static final String FILE_UPLOAD_FAILED_CONTENT_TYPE = "Content type is not valid";
     public static final String FILE_UPLOAD_SUCCESS = "Uploaded successfully";
+    public static final String FILE_UPLOAD_FAIL = "Uploaded failed";
     public static final String FILE_DELETE_SUCCESS = "Deleted successfully";
     public static final String SAMPLE_DOCUMENTS = "sample-documents";
     public static final String SAMPLE_AUDIOS = "sample-audios";

@@ -1,7 +1,6 @@
 package com.example.file.handle.modal;
 
 import com.example.file.handle.util.enumerate.ContentType;
-import com.example.file.handle.util.enumerate.ServiceType;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 

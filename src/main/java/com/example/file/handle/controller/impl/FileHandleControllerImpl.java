@@ -6,20 +6,23 @@ import com.example.file.handle.service.FileHandleService;
 import com.example.file.handle.util.enumerate.ContentType;
 import com.example.file.handle.util.enumerate.ServiceType;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ByteArrayResource;
+import org.springframework.core.io.Resource;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 
 @Controller
 public class FileHandleControllerImpl implements FileHandleController {
     @Autowired
-   private FileHandleService fileHandleService;
+    private FileHandleService fileHandleService;
 
     @Override
     public ResponseEntity<List<FileInfo>> listOfFiles(ServiceType serviceType) {
@@ -27,16 +30,29 @@ public class FileHandleControllerImpl implements FileHandleController {
             List<FileInfo> files = fileHandleService.listOfFiles(serviceType);
 
             return ResponseEntity.ok(files);
-        }catch (Exception e) {
+        } catch (Exception e) {
             String errorMessage = "Failed to load files. " + e.getMessage();
             return new ResponseEntity<>(new ArrayList<>(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
     @Override
-    public ResponseEntity<String> deleteFile(String fileName,ServiceType serviceType, ContentType contentType) {
+    public ResponseEntity<Resource> downloadFile(String fileName, ServiceType serviceType, ContentType contentType) {
+        ByteArrayResource resource = fileHandleService.downloadFile(fileName, serviceType, contentType);
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.add(HttpHeaders.CONTENT_DISPOSITION,
+                "attachment; filename=\"" + fileName + "\"");
+
+        return ResponseEntity.ok().
+                contentType(MediaType.APPLICATION_OCTET_STREAM).
+                headers(headers).body(resource);
+    }
+
+    @Override
+    public ResponseEntity<String> deleteFile(String fileName, ServiceType serviceType, ContentType contentType) {
         try {
-            String response = fileHandleService.deleteFile(fileName,serviceType,contentType);
+            String response = fileHandleService.deleteFile(fileName, serviceType, contentType);
             return new ResponseEntity<>(response, HttpStatus.OK);
         } catch (Exception e) {
             String errorMessage = "Failed to delete file. " + e.getMessage();
@@ -45,14 +61,14 @@ public class FileHandleControllerImpl implements FileHandleController {
     }
 
     @Override
-   public ResponseEntity<String> uploadFile(MultipartFile file, ServiceType serviceType, ContentType contentType) {
-       try {
-           String response = fileHandleService.uploadFile(file, serviceType,contentType);
-           return new ResponseEntity<>(response, HttpStatus.OK);
-       } catch (Exception e) {
-           String errorMessage = "Failed to upload file. " + e.getMessage();
-           return new ResponseEntity<>(errorMessage, HttpStatus.INTERNAL_SERVER_ERROR);
-       }
+    public ResponseEntity<String> uploadFile(MultipartFile file, ServiceType serviceType, ContentType contentType) {
+        try {
+            String response = fileHandleService.uploadFile(file, serviceType, contentType);
+            return new ResponseEntity<>(response, HttpStatus.OK);
+        } catch (Exception e) {
+            String errorMessage = "Failed to upload file. " + e.getMessage();
+            return new ResponseEntity<>(errorMessage, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
 
