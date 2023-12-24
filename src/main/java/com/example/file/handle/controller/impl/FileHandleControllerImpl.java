@@ -16,7 +16,18 @@ public class FileHandleControllerImpl implements FileHandleController {
     @Autowired
    private FileHandleService fileHandleService;
 
-   @Override
+    @Override
+    public ResponseEntity<String> deleteFile(String fileName,ServiceType serviceType, ContentType contentType) {
+        try {
+            String response = fileHandleService.deleteFile(fileName,serviceType,contentType);
+            return new ResponseEntity<>(response, HttpStatus.OK);
+        } catch (Exception e) {
+            String errorMessage = "Failed to delete file. " + e.getMessage();
+            return new ResponseEntity<>(errorMessage, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @Override
    public ResponseEntity<String> uploadFile(MultipartFile file, ServiceType serviceType, ContentType contentType) {
        try {
            String response = fileHandleService.uploadFile(file, serviceType,contentType);

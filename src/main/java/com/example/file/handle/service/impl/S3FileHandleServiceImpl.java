@@ -9,6 +9,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 import software.amazon.awssdk.core.sync.RequestBody;
 import software.amazon.awssdk.services.s3.S3Client;
+import software.amazon.awssdk.services.s3.model.DeleteObjectRequest;
+import software.amazon.awssdk.services.s3.model.HeadObjectRequest;
+import software.amazon.awssdk.services.s3.model.HeadObjectResponse;
 import software.amazon.awssdk.services.s3.model.PutObjectRequest;
 
 import java.io.IOException;
@@ -31,6 +34,30 @@ public class S3FileHandleServiceImpl implements S3FileHandleService {
             return Constant.FILE_UPLOAD_SUCCESS;
         } catch (IOException e) {
             throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public String deleteFile(String fileName, ContentType contentType) {
+        try {
+            String fileToDelete = Constant.decideFolder(contentType) + "/" + fileName;
+
+            HeadObjectRequest headObjectRequest = HeadObjectRequest.builder()
+                    .bucket(bucketName)
+                    .key(fileToDelete)
+                    .build();
+
+            amazonS3.headObject(headObjectRequest);
+
+            DeleteObjectRequest deleteObjectRequest = DeleteObjectRequest.builder()
+                    .bucket(bucketName)
+                    .key(fileToDelete)
+                    .build();
+
+            amazonS3.deleteObject(deleteObjectRequest);
+            return Constant.FILE_DELETE_SUCCESS;
+        } catch (Exception e) {
+            throw new RuntimeException(Constant.FILE_DELETE_FAILED_FILE_NOT_FOUND);
         }
     }
 }

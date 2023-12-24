@@ -31,4 +31,16 @@ public class GCPFileHandleServiceImpl implements GCPFileHandleService {
             throw new RuntimeException(e);
         }
     }
+
+    @Override
+    public String deleteFile(String fileName, ContentType contentType) {
+        try {
+            String fileToDelete = Constant.decideFolder(contentType) + "/" + fileName;
+            Blob blob = storage.get(bucketName, fileToDelete);
+            blob.delete();
+            return Constant.FILE_DELETE_SUCCESS;
+        } catch (Exception e) {
+            throw new RuntimeException(Constant.FILE_DELETE_FAILED_FILE_NOT_FOUND);
+        }
+    }
 }
