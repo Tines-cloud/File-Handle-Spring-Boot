@@ -3,7 +3,9 @@ package com.example.file.handle.util;
 import com.example.file.handle.util.enumerate.ContentType;
 
 public class Constant {
-    public static final String FILE_HANDLE = "/upload";
+    public static final String FILE_HANDLE = "file-handle";
+    public static final String FILE_UPLOAD = "/upload";
+    public static final String FILE_LOAD = "/load";
     public static final String FILE_DOWNLOAD = "/download/{fileName}";
     public static final String FILE_REMOVE = "/delete/{fileName}";
     public static final String FILE_UPLOAD_FAILED_FILE_INVALID = "File is not valid";

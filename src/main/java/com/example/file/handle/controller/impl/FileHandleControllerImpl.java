@@ -3,6 +3,7 @@ package com.example.file.handle.controller.impl;
 import com.example.file.handle.controller.FileHandleController;
 import com.example.file.handle.modal.FileInfo;
 import com.example.file.handle.service.FileHandleService;
+import com.example.file.handle.util.Constant;
 import com.example.file.handle.util.enumerate.ContentType;
 import com.example.file.handle.util.enumerate.ServiceType;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,14 +13,16 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-@Controller
+@RestController
+@RequestMapping(Constant.FILE_HANDLE)
 public class FileHandleControllerImpl implements FileHandleController {
     @Autowired
     private FileHandleService fileHandleService;

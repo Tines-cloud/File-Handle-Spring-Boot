@@ -45,7 +45,7 @@ public class GCPFileHandleServiceImpl implements GCPFileHandleService {
             logger.info(Constant.FILE_UPLOAD_SUCCESS);
             return Constant.FILE_UPLOAD_SUCCESS;
         } catch (IOException e) {
-            logger.info(Constant.FILE_UPLOAD_FAIL + " : " + e.getMessage());
+            logger.error(Constant.FILE_UPLOAD_FAIL + " : " + e.getMessage());
             throw new RuntimeException(Constant.FILE_HANDLE_FAILED_SERVICE_TYPE);
         }
     }
@@ -60,7 +60,7 @@ public class GCPFileHandleServiceImpl implements GCPFileHandleService {
             logger.info(Constant.FILE_DELETE_SUCCESS);
             return Constant.FILE_DELETE_SUCCESS;
         } catch (Exception e) {
-            logger.info(Constant.FILE_NOT_FOUND + " : " + e.getMessage());
+            logger.error(Constant.FILE_NOT_FOUND + " : " + e.getMessage());
             throw new RuntimeException(Constant.FILE_NOT_FOUND);
         }
     }

@@ -12,7 +12,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.util.List;
 
 public interface FileHandleController {
-    @GetMapping(value = Constant.FILE_HANDLE)
+    @GetMapping(value = Constant.FILE_LOAD)
     ResponseEntity<List<FileInfo>> listOfFiles(@RequestParam(value = "serviceType") ServiceType serviceType);
 
     @GetMapping(value = Constant.FILE_DOWNLOAD)
@@ -27,7 +27,7 @@ public interface FileHandleController {
             @RequestParam(value = "serviceType") ServiceType serviceType,
             @RequestParam(value = "contentType") ContentType contentType);
 
-    @PostMapping(value = Constant.FILE_HANDLE)
+    @PostMapping(value = Constant.FILE_UPLOAD)
     ResponseEntity<String> uploadFile(@RequestParam(value = "file") MultipartFile file,
                                       @RequestParam(value = "serviceType") ServiceType serviceType,
                                       @RequestParam(value = "contentType") ContentType contentType);
