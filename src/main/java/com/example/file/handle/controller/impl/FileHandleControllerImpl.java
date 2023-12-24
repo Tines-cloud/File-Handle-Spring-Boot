@@ -1,6 +1,7 @@
 package com.example.file.handle.controller.impl;
 
 import com.example.file.handle.controller.FileHandleController;
+import com.example.file.handle.modal.FileInfo;
 import com.example.file.handle.service.FileHandleService;
 import com.example.file.handle.util.enumerate.ContentType;
 import com.example.file.handle.util.enumerate.ServiceType;
@@ -10,11 +11,27 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 
 @Controller
 public class FileHandleControllerImpl implements FileHandleController {
     @Autowired
    private FileHandleService fileHandleService;
+
+    @Override
+    public ResponseEntity<List<FileInfo>> listOfFiles(ServiceType serviceType) {
+        try {
+            List<FileInfo> files = fileHandleService.listOfFiles(serviceType);
+
+            return ResponseEntity.ok(files);
+        }catch (Exception e) {
+            String errorMessage = "Failed to load files. " + e.getMessage();
+            return new ResponseEntity<>(new ArrayList<>(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
 
     @Override
     public ResponseEntity<String> deleteFile(String fileName,ServiceType serviceType, ContentType contentType) {

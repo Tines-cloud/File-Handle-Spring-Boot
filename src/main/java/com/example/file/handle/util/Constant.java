@@ -30,4 +30,18 @@ public class Constant {
             throw new RuntimeException(Constant.FILE_UPLOAD_FAILED_CONTENT_TYPE);
         }
     }
+
+    public static ContentType decideContentType(String folderPath) {
+        if (SAMPLE_DOCUMENTS.equals(folderPath)) {
+            return ContentType.DOC;
+        } else if (SAMPLE_AUDIOS.equals(folderPath)) {
+            return ContentType.AUDIO;
+        } else if (SAMPLE_IMAGES.equals(folderPath)) {
+            return ContentType.IMAGE;
+        } else if (SAMPLE_VIDEOS.equals(folderPath)) {
+            return ContentType.VIDEO;
+        } else {
+            return ContentType.OTHER;
+        }
+    }
 }

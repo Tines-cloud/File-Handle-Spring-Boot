@@ -1,5 +1,6 @@
 package com.example.file.handle.service.impl;
 
+import com.example.file.handle.modal.FileInfo;
 import com.example.file.handle.service.FileHandleService;
 import com.example.file.handle.service.GCPFileHandleService;
 import com.example.file.handle.service.S3FileHandleService;
@@ -10,6 +11,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Objects;
 
 @Service
@@ -47,6 +51,17 @@ public class FileHandleServiceImpl implements FileHandleService {
             return s3FileHandleService.deleteFile(fileName,contentType);
         } else {
             return Constant.FILE_HANDLE_FAILED_SERVICE_TYPE;
+        }
+    }
+
+    @Override
+    public List<FileInfo> listOfFiles(ServiceType serviceType) {
+        if (serviceType.equals(ServiceType.GCP)) {
+            return gcpFileHandleService.listOfFiles();
+        } else if (serviceType.equals(ServiceType.S3)) {
+            return s3FileHandleService.listOfFiles();
+        } else {
+            return new ArrayList<>();
         }
     }
 }

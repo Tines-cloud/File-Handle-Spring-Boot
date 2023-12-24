@@ -1,16 +1,18 @@
 package com.example.file.handle.controller;
 
+import com.example.file.handle.modal.FileInfo;
 import com.example.file.handle.util.Constant;
 import com.example.file.handle.util.enumerate.ContentType;
 import com.example.file.handle.util.enumerate.ServiceType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.List;
+
 public interface FileHandleController {
+    @GetMapping(value = Constant.FILE_HANDLE)
+    public ResponseEntity<List<FileInfo>> listOfFiles(@RequestParam(value = "serviceType") ServiceType serviceType);
 
     @DeleteMapping(value = Constant.FILE_REMOVE)
     ResponseEntity<String> deleteFile(
