@@ -1,0 +1,598 @@
+22:39:47.388 [main] INFO  c.e.f.handle.FileUploadApplication - Starting FileUploadApplication using Java 17.0.2 with PID 14580 (E:\Projects\file-handle\File-Handle-Spring-Boot\target\classes started by tines in E:\Projects\file-handle\File-Handle-Spring-Boot)
+22:39:47.397 [main] INFO  c.e.f.handle.FileUploadApplication - No active profile set, falling back to 1 default profile: "default"
+22:39:50.317 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+22:39:50.335 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22:39:50.342 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:39:50.343 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+22:39:50.627 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:39:50.629 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3015 ms
+22:39:54.004 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22:39:54.082 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+22:39:54.121 [main] INFO  c.e.f.handle.FileUploadApplication - Started FileUploadApplication in 7.745 seconds (process running for 9.554)
+22:40:16.267 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:40:16.268 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22:40:16.270 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+22:40:16.402 [http-nio-8080-exec-2] INFO  c.e.f.h.s.i.S3FileHandleServiceImpl - List of files method
+22:41:05.403 [http-nio-8080-exec-3] INFO  c.e.f.h.s.i.GCPFileHandleServiceImpl - Delete file method
+22:41:07.250 [http-nio-8080-exec-3] INFO  c.e.f.h.s.i.GCPFileHandleServiceImpl - Deleted successfully
+22:41:11.850 [http-nio-8080-exec-4] INFO  c.e.f.h.s.i.GCPFileHandleServiceImpl - Delete file method
+22:41:11.981 [http-nio-8080-exec-4] INFO  c.e.f.h.s.i.GCPFileHandleServiceImpl - File is not found : Cannot invoke "com.google.cloud.storage.Blob.delete(com.google.cloud.storage.Blob$BlobSourceOption[])" because "blob" is null
+22:44:42.882 [http-nio-8080-exec-5] INFO  c.e.f.h.s.i.GCPFileHandleServiceImpl - List of files method
+22:45:07.381 [http-nio-8080-exec-7] INFO  c.e.f.h.s.i.GCPFileHandleServiceImpl - Upload file method
+22:46:55.860 [http-nio-8080-exec-7] INFO  c.e.f.h.s.i.GCPFileHandleServiceImpl - Uploaded successfully
+22:48:18.117 [main] INFO  c.e.f.handle.FileUploadApplication - Starting FileUploadApplication using Java 17.0.2 with PID 8472 (E:\Projects\file-handle\File-Handle-Spring-Boot\target\classes started by tines in E:\Projects\file-handle\File-Handle-Spring-Boot)
+22:48:18.124 [main] INFO  c.e.f.handle.FileUploadApplication - No active profile set, falling back to 1 default profile: "default"
+22:48:21.232 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+22:48:21.268 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22:48:21.276 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:48:21.278 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+22:48:21.549 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:48:21.550 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3256 ms
+22:48:24.850 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22:48:24.900 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+22:48:24.926 [main] INFO  c.e.f.handle.FileUploadApplication - Started FileUploadApplication in 8.085 seconds (process running for 9.913)
+22:48:29.402 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:48:29.403 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22:48:29.405 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+22:48:29.555 [http-nio-8080-exec-2] INFO  c.e.f.h.s.i.GCPFileHandleServiceImpl - Delete file method
+22:48:31.090 [http-nio-8080-exec-2] ERROR c.e.f.h.s.i.GCPFileHandleServiceImpl - File is not found : Cannot invoke "com.google.cloud.storage.Blob.delete(com.google.cloud.storage.Blob$BlobSourceOption[])" because "blob" is null
+22:54:34.436 [main] INFO  c.e.f.handle.FileUploadApplication - Starting FileUploadApplication using Java 17.0.2 with PID 12528 (E:\Projects\file-handle\File-Handle-Spring-Boot\target\classes started by tines in E:\Projects\file-handle\File-Handle-Spring-Boot)
+22:54:34.441 [main] INFO  c.e.f.handle.FileUploadApplication - No active profile set, falling back to 1 default profile: "default"
+22:54:37.449 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+22:54:37.468 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22:54:37.474 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:54:37.475 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+22:54:37.744 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:54:37.746 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3161 ms
+22:54:40.632 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22:54:40.678 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+22:54:40.699 [main] INFO  c.e.f.handle.FileUploadApplication - Started FileUploadApplication in 7.269 seconds (process running for 9.252)
+22:56:24.508 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:56:24.509 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22:56:24.512 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+22:56:48.445 [main] INFO  c.e.f.handle.FileUploadApplication - Starting FileUploadApplication using Java 17.0.2 with PID 9600 (E:\Projects\file-handle\File-Handle-Spring-Boot\target\classes started by tines in E:\Projects\file-handle\File-Handle-Spring-Boot)
+22:56:48.450 [main] INFO  c.e.f.handle.FileUploadApplication - No active profile set, falling back to 1 default profile: "default"
+22:56:51.660 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+22:56:51.679 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22:56:51.686 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:56:51.687 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+22:56:52.015 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:56:52.016 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3430 ms
+22:56:55.145 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22:56:55.199 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+22:56:55.228 [main] INFO  c.e.f.handle.FileUploadApplication - Started FileUploadApplication in 7.708 seconds (process running for 9.515)
+22:57:05.090 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:57:05.090 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22:57:05.092 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+22:59:07.369 [main] INFO  c.e.f.handle.FileUploadApplication - Starting FileUploadApplication using Java 17.0.2 with PID 12116 (E:\Projects\file-handle\File-Handle-Spring-Boot\target\classes started by tines in E:\Projects\file-handle\File-Handle-Spring-Boot)
+22:59:07.375 [main] INFO  c.e.f.handle.FileUploadApplication - No active profile set, falling back to 1 default profile: "default"
+22:59:09.205 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+22:59:09.229 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+22:59:09.288 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117)
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95)
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1211)
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:517)
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:465)
+	at org.springframework.core.ResolvableType.forClass(ResolvableType.java:1093)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.getTargetType(PluginRegistriesBeanDefinitionRegistrar.java:101)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.registerBeanDefinitions(PluginRegistriesBeanDefinitionRegistrar.java:71)
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:376)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:375)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:428)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:289)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.example.file.handle.FileUploadApplication.main(FileUploadApplication.java:11)
+Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 32 common frames omitted
+23:01:09.408 [main] INFO  c.e.f.handle.FileUploadApplication - Starting FileUploadApplication using Java 17.0.2 with PID 14572 (E:\Projects\file-handle\File-Handle-Spring-Boot\target\classes started by tines in E:\Projects\file-handle\File-Handle-Spring-Boot)
+23:01:09.414 [main] INFO  c.e.f.handle.FileUploadApplication - No active profile set, falling back to 1 default profile: "default"
+23:01:11.356 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+23:01:11.385 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+23:01:11.438 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117)
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95)
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1211)
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:517)
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:465)
+	at org.springframework.core.ResolvableType.forClass(ResolvableType.java:1093)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.getTargetType(PluginRegistriesBeanDefinitionRegistrar.java:101)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.registerBeanDefinitions(PluginRegistriesBeanDefinitionRegistrar.java:71)
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:376)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:375)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:428)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:289)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.example.file.handle.FileUploadApplication.main(FileUploadApplication.java:11)
+Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 32 common frames omitted
+23:02:08.096 [main] INFO  c.e.f.handle.FileUploadApplication - Starting FileUploadApplication using Java 17.0.2 with PID 14236 (E:\Projects\file-handle\File-Handle-Spring-Boot\target\classes started by tines in E:\Projects\file-handle\File-Handle-Spring-Boot)
+23:02:08.102 [main] INFO  c.e.f.handle.FileUploadApplication - No active profile set, falling back to 1 default profile: "default"
+23:02:10.966 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:02:10.980 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:02:10.985 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:02:10.986 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:02:11.362 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:02:11.363 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3133 ms
+23:02:14.151 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:02:14.193 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:02:14.216 [main] INFO  c.e.f.handle.FileUploadApplication - Started FileUploadApplication in 7.034 seconds (process running for 8.819)
+23:02:44.995 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:02:44.995 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:02:44.995 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+23:08:34.681 [main] INFO  c.e.f.handle.FileUploadApplication - Starting FileUploadApplication using Java 17.0.2 with PID 8944 (E:\Projects\file-handle\File-Handle-Spring-Boot\target\classes started by tines in E:\Projects\file-handle\File-Handle-Spring-Boot)
+23:08:34.696 [main] INFO  c.e.f.handle.FileUploadApplication - No active profile set, falling back to 1 default profile: "default"
+23:08:38.030 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:08:38.047 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:08:38.053 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:08:38.054 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:08:38.314 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:08:38.317 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3470 ms
+23:08:41.053 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:08:41.100 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:08:41.116 [main] INFO  c.e.f.handle.FileUploadApplication - Started FileUploadApplication in 7.92 seconds (process running for 9.832)
+23:08:51.857 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:08:51.858 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:08:51.861 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+23:09:52.336 [main] INFO  c.e.f.handle.FileUploadApplication - Starting FileUploadApplication using Java 17.0.2 with PID 14816 (E:\Projects\file-handle\File-Handle-Spring-Boot\target\classes started by tines in E:\Projects\file-handle\File-Handle-Spring-Boot)
+23:09:52.342 [main] INFO  c.e.f.handle.FileUploadApplication - No active profile set, falling back to 1 default profile: "default"
+23:09:54.125 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+23:09:54.149 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+23:09:54.195 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117)
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95)
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1211)
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:517)
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:465)
+	at org.springframework.core.ResolvableType.forClass(ResolvableType.java:1093)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.getTargetType(PluginRegistriesBeanDefinitionRegistrar.java:101)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.registerBeanDefinitions(PluginRegistriesBeanDefinitionRegistrar.java:71)
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:376)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:375)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:428)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:289)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.example.file.handle.FileUploadApplication.main(FileUploadApplication.java:11)
+Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 32 common frames omitted
+23:12:09.894 [main] INFO  c.e.f.handle.FileUploadApplication - Starting FileUploadApplication using Java 17.0.2 with PID 5040 (E:\Projects\file-handle\File-Handle-Spring-Boot\target\classes started by tines in E:\Projects\file-handle\File-Handle-Spring-Boot)
+23:12:09.899 [main] INFO  c.e.f.handle.FileUploadApplication - No active profile set, falling back to 1 default profile: "default"
+23:12:11.844 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+23:12:11.876 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+23:12:11.933 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117)
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95)
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1211)
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:517)
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:465)
+	at org.springframework.core.ResolvableType.forClass(ResolvableType.java:1093)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.getTargetType(PluginRegistriesBeanDefinitionRegistrar.java:101)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.registerBeanDefinitions(PluginRegistriesBeanDefinitionRegistrar.java:71)
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:376)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:375)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:428)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:289)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.example.file.handle.FileUploadApplication.main(FileUploadApplication.java:11)
+Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 32 common frames omitted
+23:15:30.692 [main] INFO  c.e.f.handle.FileUploadApplication - Starting FileUploadApplication using Java 17.0.2 with PID 14764 (E:\Projects\file-handle\File-Handle-Spring-Boot\target\classes started by tines in E:\Projects\file-handle\File-Handle-Spring-Boot)
+23:15:30.702 [main] INFO  c.e.f.handle.FileUploadApplication - No active profile set, falling back to 1 default profile: "default"
+23:15:34.610 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:15:34.628 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:15:34.634 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:15:34.635 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:15:34.894 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:15:34.895 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4058 ms
+23:15:35.162 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiDocumentationScanner' defined in URL [jar:file:/C:/Users/tines/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiDocumentationScanner.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'apiListingScanner' defined in URL [jar:file:/C:/Users/tines/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiListingScanner.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'apiDescriptionReader' defined in URL [jar:file:/C:/Users/tines/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiDescriptionReader.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'cachingOperationReader' defined in URL [jar:file:/C:/Users/tines/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/CachingOperationReader.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'apiOperationReader' defined in URL [jar:file:/C:/Users/tines/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/ApiOperationReader.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'documentationPluginsManager': Unsatisfied dependency expressed through field 'documentationPlugins': Error creating bean with name 'documentationPluginRegistry': 'void org.springframework.util.Assert.notNull(java.lang.Object)'
+23:15:35.170 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+23:15:35.204 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+23:15:35.255 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.plugin.core.support.AbstractTypeAwareSupport$BeansOfTypeTargetSource.<init>(AbstractTypeAwareSupport.java:135)
+
+The following method did not exist:
+
+    'void org.springframework.util.Assert.notNull(java.lang.Object)'
+
+The calling method's class, org.springframework.plugin.core.support.AbstractTypeAwareSupport$BeansOfTypeTargetSource, was loaded from the following location:
+
+    jar:file:/C:/Users/tines/.m2/repository/org/springframework/plugin/spring-plugin-core/1.2.0.RELEASE/spring-plugin-core-1.2.0.RELEASE.jar!/org/springframework/plugin/core/support/AbstractTypeAwareSupport$BeansOfTypeTargetSource.class
+
+The called method's class, org.springframework.util.Assert, is available from the following locations:
+
+    jar:file:/C:/Users/tines/.m2/repository/org/springframework/spring-core/6.1.1/spring-core-6.1.1.jar!/org/springframework/util/Assert.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    org.springframework.util.Assert: file:/C:/Users/tines/.m2/repository/org/springframework/spring-core/6.1.1/spring-core-6.1.1.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes org.springframework.plugin.core.support.AbstractTypeAwareSupport$BeansOfTypeTargetSource and org.springframework.util.Assert
+
+23:17:31.800 [main] INFO  c.e.f.handle.FileUploadApplication - Starting FileUploadApplication using Java 17.0.2 with PID 5100 (E:\Projects\file-handle\File-Handle-Spring-Boot\target\classes started by tines in E:\Projects\file-handle\File-Handle-Spring-Boot)
+23:17:31.806 [main] INFO  c.e.f.handle.FileUploadApplication - No active profile set, falling back to 1 default profile: "default"
+23:17:35.497 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:17:35.516 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:17:35.536 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:17:35.537 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:17:35.759 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:17:35.760 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3812 ms
+23:17:36.027 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiDocumentationScanner' defined in URL [jar:file:/C:/Users/tines/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiDocumentationScanner.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'apiListingScanner' defined in URL [jar:file:/C:/Users/tines/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiListingScanner.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'apiDescriptionReader' defined in URL [jar:file:/C:/Users/tines/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiDescriptionReader.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'cachingOperationReader' defined in URL [jar:file:/C:/Users/tines/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/CachingOperationReader.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'apiOperationReader' defined in URL [jar:file:/C:/Users/tines/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/ApiOperationReader.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'documentationPluginsManager': Unsatisfied dependency expressed through field 'documentationPlugins': Error creating bean with name 'documentationPluginRegistry': 'void org.springframework.util.Assert.notNull(java.lang.Object)'
+23:17:36.034 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+23:17:36.069 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+23:17:36.119 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.plugin.core.support.AbstractTypeAwareSupport$BeansOfTypeTargetSource.<init>(AbstractTypeAwareSupport.java:135)
+
+The following method did not exist:
+
+    'void org.springframework.util.Assert.notNull(java.lang.Object)'
+
+The calling method's class, org.springframework.plugin.core.support.AbstractTypeAwareSupport$BeansOfTypeTargetSource, was loaded from the following location:
+
+    jar:file:/C:/Users/tines/.m2/repository/org/springframework/plugin/spring-plugin-core/1.2.0.RELEASE/spring-plugin-core-1.2.0.RELEASE.jar!/org/springframework/plugin/core/support/AbstractTypeAwareSupport$BeansOfTypeTargetSource.class
+
+The called method's class, org.springframework.util.Assert, is available from the following locations:
+
+    jar:file:/C:/Users/tines/.m2/repository/org/springframework/spring-core/6.1.1/spring-core-6.1.1.jar!/org/springframework/util/Assert.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    org.springframework.util.Assert: file:/C:/Users/tines/.m2/repository/org/springframework/spring-core/6.1.1/spring-core-6.1.1.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes org.springframework.plugin.core.support.AbstractTypeAwareSupport$BeansOfTypeTargetSource and org.springframework.util.Assert
+
+23:18:12.926 [main] INFO  c.e.f.handle.FileUploadApplication - Starting FileUploadApplication using Java 17.0.2 with PID 13508 (E:\Projects\file-handle\File-Handle-Spring-Boot\target\classes started by tines in E:\Projects\file-handle\File-Handle-Spring-Boot)
+23:18:12.933 [main] INFO  c.e.f.handle.FileUploadApplication - No active profile set, falling back to 1 default profile: "default"
+23:18:15.879 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:18:15.919 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:18:15.927 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:18:15.928 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:18:16.159 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:18:16.159 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3082 ms
+23:18:19.128 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:18:19.167 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:18:19.188 [main] INFO  c.e.f.handle.FileUploadApplication - Started FileUploadApplication in 7.132 seconds (process running for 8.75)
+23:18:24.633 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:18:24.634 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:18:24.637 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+23:27:35.572 [main] INFO  c.e.f.handle.FileUploadApplication - Starting FileUploadApplication using Java 17.0.2 with PID 4988 (E:\Projects\file-handle\File-Handle-Spring-Boot\target\classes started by tines in E:\Projects\file-handle\File-Handle-Spring-Boot)
+23:27:35.577 [main] INFO  c.e.f.handle.FileUploadApplication - No active profile set, falling back to 1 default profile: "default"
+23:27:39.006 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:27:39.022 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:27:39.028 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:27:39.029 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:27:39.261 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:27:39.262 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3427 ms
+23:27:42.689 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:27:42.731 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:27:42.758 [main] INFO  c.e.f.handle.FileUploadApplication - Started FileUploadApplication in 8.179 seconds (process running for 10.021)
+23:27:47.879 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:27:47.879 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:27:47.882 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+23:27:49.549 [http-nio-8080-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 505 ms
+23:32:13.598 [main] INFO  c.e.f.handle.FileUploadApplication - Starting FileUploadApplication using Java 17.0.2 with PID 13132 (E:\Projects\file-handle\File-Handle-Spring-Boot\target\classes started by tines in E:\Projects\file-handle\File-Handle-Spring-Boot)
+23:32:13.606 [main] INFO  c.e.f.handle.FileUploadApplication - No active profile set, falling back to 1 default profile: "default"
+23:32:17.480 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:32:17.495 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:32:17.502 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:32:17.502 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:32:17.776 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:32:17.776 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4013 ms
+23:32:21.667 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:32:21.715 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:32:21.746 [main] INFO  c.e.f.handle.FileUploadApplication - Started FileUploadApplication in 9.066 seconds (process running for 11.136)
+23:32:22.358 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:32:22.359 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:32:22.362 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+23:32:23.640 [http-nio-8080-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 648 ms
+23:33:59.819 [main] INFO  c.e.f.handle.FileUploadApplication - Starting FileUploadApplication using Java 17.0.2 with PID 8664 (E:\Projects\file-handle\File-Handle-Spring-Boot\target\classes started by tines in E:\Projects\file-handle\File-Handle-Spring-Boot)
+23:33:59.826 [main] INFO  c.e.f.handle.FileUploadApplication - No active profile set, falling back to 1 default profile: "default"
+23:34:02.950 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:34:02.968 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:34:02.973 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:34:02.974 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:34:03.211 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:34:03.212 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3247 ms
+23:34:06.588 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:34:06.707 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:34:06.787 [main] INFO  c.e.f.handle.FileUploadApplication - Started FileUploadApplication in 7.947 seconds (process running for 9.934)
+23:34:07.634 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:34:07.635 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:34:07.640 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+23:34:09.021 [http-nio-8080-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 615 ms
+23:34:42.730 [main] INFO  c.e.f.handle.FileUploadApplication - Starting FileUploadApplication using Java 17.0.2 with PID 12500 (E:\Projects\file-handle\File-Handle-Spring-Boot\target\classes started by tines in E:\Projects\file-handle\File-Handle-Spring-Boot)
+23:34:42.735 [main] INFO  c.e.f.handle.FileUploadApplication - No active profile set, falling back to 1 default profile: "default"
+23:34:46.158 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:34:46.176 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:34:46.182 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:34:46.183 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:34:46.426 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:34:46.428 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3547 ms
+23:34:49.855 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:34:49.899 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:34:49.929 [main] INFO  c.e.f.handle.FileUploadApplication - Started FileUploadApplication in 8.168 seconds (process running for 9.996)
+23:34:53.789 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:34:53.790 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:34:53.792 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+23:34:55.005 [http-nio-8080-exec-4] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 749 ms
+23:37:11.234 [main] INFO  c.e.f.handle.FileUploadApplication - Starting FileUploadApplication using Java 17.0.2 with PID 11512 (E:\Projects\file-handle\File-Handle-Spring-Boot\target\classes started by tines in E:\Projects\file-handle\File-Handle-Spring-Boot)
+23:37:11.245 [main] INFO  c.e.f.handle.FileUploadApplication - No active profile set, falling back to 1 default profile: "default"
+23:37:15.352 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:37:15.367 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:37:15.373 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:37:15.373 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:37:15.696 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:37:15.697 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4300 ms
+23:37:19.662 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:37:19.742 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:37:19.772 [main] INFO  c.e.f.handle.FileUploadApplication - Started FileUploadApplication in 9.558 seconds (process running for 11.237)
+23:37:19.924 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:37:19.929 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:37:19.931 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+23:37:21.261 [http-nio-8080-exec-4] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 728 ms
+23:38:49.488 [http-nio-8080-exec-1] INFO  c.e.f.h.s.i.S3FileHandleServiceImpl - List of files method
+23:38:59.994 [http-nio-8080-exec-4] INFO  c.e.f.h.s.i.GCPFileHandleServiceImpl - List of files method
+23:39:30.466 [http-nio-8080-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.multipart.MultipartException: Current request is not a multipart request] with root cause
+org.springframework.web.multipart.MultipartException: Current request is not a multipart request
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValueInternal(RequestParamMethodArgumentResolver.java:210)
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValue(RequestParamMethodArgumentResolver.java:193)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:124)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:218)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:171)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+23:42:05.054 [main] INFO  c.e.f.handle.FileUploadApplication - Starting FileUploadApplication using Java 17.0.2 with PID 10672 (E:\Projects\file-handle\File-Handle-Spring-Boot\target\classes started by tines in E:\Projects\file-handle\File-Handle-Spring-Boot)
+23:42:05.060 [main] INFO  c.e.f.handle.FileUploadApplication - No active profile set, falling back to 1 default profile: "default"
+23:42:09.389 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:42:09.408 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:42:09.415 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:42:09.416 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:42:09.920 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:42:09.921 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4665 ms
+23:42:15.145 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:42:15.194 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:42:15.224 [main] INFO  c.e.f.handle.FileUploadApplication - Started FileUploadApplication in 11.586 seconds (process running for 13.51)
+23:42:35.058 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:42:35.095 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:42:35.132 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 29 ms
+23:42:37.371 [http-nio-8080-exec-5] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1127 ms
+23:46:24.824 [main] INFO  c.e.f.handle.FileUploadApplication - Starting FileUploadApplication using Java 17.0.2 with PID 10928 (E:\Projects\file-handle\File-Handle-Spring-Boot\target\classes started by tines in E:\Projects\file-handle\File-Handle-Spring-Boot)
+23:46:24.832 [main] INFO  c.e.f.handle.FileUploadApplication - No active profile set, falling back to 1 default profile: "default"
+23:46:28.205 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:46:28.226 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:46:28.234 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:46:28.235 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:46:28.564 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:46:28.568 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3562 ms
+23:46:32.835 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:46:32.902 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:46:32.939 [main] INFO  c.e.f.handle.FileUploadApplication - Started FileUploadApplication in 9.075 seconds (process running for 11.001)
+23:46:45.219 [main] INFO  c.e.f.handle.FileUploadApplication - Starting FileUploadApplication using Java 17.0.2 with PID 11908 (E:\Projects\file-handle\File-Handle-Spring-Boot\target\classes started by tines in E:\Projects\file-handle\File-Handle-Spring-Boot)
+23:46:45.219 [main] INFO  c.e.f.handle.FileUploadApplication - No active profile set, falling back to 1 default profile: "default"
+23:46:48.516 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:46:48.534 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:46:48.540 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:46:48.541 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:46:48.814 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:46:48.815 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3439 ms
+23:46:52.753 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:46:52.818 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:46:52.869 [main] INFO  c.e.f.handle.FileUploadApplication - Started FileUploadApplication in 8.571 seconds (process running for 10.225)
+23:46:52.975 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:46:52.976 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:46:52.988 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+23:46:54.999 [http-nio-8080-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 762 ms
+23:49:03.088 [main] INFO  c.e.f.handle.FileUploadApplication - Starting FileUploadApplication using Java 17.0.2 with PID 6692 (E:\Projects\file-handle\File-Handle-Spring-Boot\target\classes started by tines in E:\Projects\file-handle\File-Handle-Spring-Boot)
+23:49:03.093 [main] INFO  c.e.f.handle.FileUploadApplication - No active profile set, falling back to 1 default profile: "default"
+23:49:06.958 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:49:06.974 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:49:06.980 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:49:06.980 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:49:07.213 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:49:07.215 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3870 ms
+23:49:10.208 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:49:10.271 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:49:10.287 [main] INFO  c.e.f.handle.FileUploadApplication - Started FileUploadApplication in 8.203 seconds (process running for 10.096)
+23:49:12.912 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:49:12.912 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:49:12.914 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+23:49:14.222 [http-nio-8080-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 649 ms
+23:50:06.364 [main] INFO  c.e.f.handle.FileUploadApplication - Starting FileUploadApplication using Java 17.0.2 with PID 15288 (E:\Projects\file-handle\File-Handle-Spring-Boot\target\classes started by tines in E:\Projects\file-handle\File-Handle-Spring-Boot)
+23:50:06.371 [main] INFO  c.e.f.handle.FileUploadApplication - No active profile set, falling back to 1 default profile: "default"
+23:50:09.469 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+23:50:09.484 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:50:09.484 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:50:09.484 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+23:50:09.724 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:50:09.724 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3186 ms
+23:50:13.091 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:50:13.138 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+23:50:13.169 [main] INFO  c.e.f.handle.FileUploadApplication - Started FileUploadApplication in 7.678 seconds (process running for 9.347)
+23:50:13.526 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:50:13.527 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:50:13.529 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+23:50:14.694 [http-nio-8080-exec-4] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 685 ms
+23:50:34.334 [http-nio-8080-exec-5] INFO  c.e.f.h.s.i.GCPFileHandleServiceImpl - List of files method
+23:50:46.375 [http-nio-8080-exec-6] INFO  c.e.f.h.s.i.S3FileHandleServiceImpl - List of files method
