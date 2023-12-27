@@ -20,6 +20,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 @Service
 public class GCPFileHandleServiceImpl implements GCPFileHandleService {
@@ -33,7 +34,7 @@ public class GCPFileHandleServiceImpl implements GCPFileHandleService {
     public String uploadFile(MultipartFile file, ContentType contentType) {
         logger.info("Upload file method");
         try {
-            String fileName = Constant.decideFolder(contentType) + "/" + file.getOriginalFilename();
+            String fileName = Constant.decideFolder(contentType) + "/" + Objects.requireNonNull(file.getOriginalFilename()).replace(" ", "_").replaceAll("[^a-zA-Z0-9_]", "");
 
             BlobId blobId = BlobId.of(bucketName, fileName);
             BlobInfo blobInfo = BlobInfo.newBuilder(blobId)

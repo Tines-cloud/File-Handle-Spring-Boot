@@ -19,6 +19,7 @@ import software.amazon.awssdk.services.s3.model.*;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 @Service
 public class S3FileHandleServiceImpl implements S3FileHandleService {
@@ -33,7 +34,7 @@ public class S3FileHandleServiceImpl implements S3FileHandleService {
     public String uploadFile(MultipartFile file, ContentType contentType) {
         logger.info("Upload file method");
         try {
-            String path = Constant.decideFolder(contentType) + "/" + file.getOriginalFilename();
+            String path = Constant.decideFolder(contentType) + "/" + Objects.requireNonNull(file.getOriginalFilename()).replace(" ", "_").replaceAll("[^a-zA-Z0-9_]", "");
 
             amazonS3.putObject(PutObjectRequest.builder()
                     .bucket(bucketName)
