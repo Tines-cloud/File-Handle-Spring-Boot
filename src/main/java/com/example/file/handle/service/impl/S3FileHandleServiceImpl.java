@@ -34,7 +34,7 @@ public class S3FileHandleServiceImpl implements S3FileHandleService {
     public String uploadFile(MultipartFile file, ContentType contentType) {
         logger.info("Upload file method");
         try {
-            String path = Constant.decideFolder(contentType) + "/" + Objects.requireNonNull(file.getOriginalFilename()).replace(" ", "_").replaceAll("[^a-zA-Z0-9_]", "");
+            String path = Constant.decideFolder(contentType) + "/" + Objects.requireNonNull(file.getOriginalFilename()).replace(" ", "_").replaceAll("[^a-zA-Z0-9_.]", "");
 
             amazonS3.putObject(PutObjectRequest.builder()
                     .bucket(bucketName)
