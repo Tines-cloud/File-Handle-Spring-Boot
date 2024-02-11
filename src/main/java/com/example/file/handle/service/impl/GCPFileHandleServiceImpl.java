@@ -5,10 +5,7 @@ import com.example.file.handle.service.GCPFileHandleService;
 import com.example.file.handle.util.Constant;
 import com.example.file.handle.util.enumerate.ContentType;
 import com.google.api.gax.paging.Page;
-import com.google.cloud.storage.Blob;
-import com.google.cloud.storage.BlobId;
-import com.google.cloud.storage.BlobInfo;
-import com.google.cloud.storage.Storage;
+import com.google.cloud.storage.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +16,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
@@ -38,7 +36,7 @@ public class GCPFileHandleServiceImpl implements GCPFileHandleService {
 
             BlobId blobId = BlobId.of(bucketName, fileName);
             BlobInfo blobInfo = BlobInfo.newBuilder(blobId)
-                    //  .setAcl(Collections.singletonList(Acl.of(Acl.User.ofAllUsers(), Acl.Role.READER)))
+                    .setAcl(Collections.singletonList(Acl.of(Acl.User.ofAllUsers(), Acl.Role.READER)))
                     .setContentType(file.getContentType())
                     .build();
 
@@ -73,7 +71,7 @@ public class GCPFileHandleServiceImpl implements GCPFileHandleService {
         Page<Blob> blobs = storage.list(bucketName);
         for (Blob blob : blobs.iterateAll()) {
             String publicLink = String.format("https://storage.googleapis.com/%s/%s", bucketName, blob.getName());
-
+1
             String[] fileName = blob.getName().split("/");
 
             FileInfo fileInfo = new FileInfo();

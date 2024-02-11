@@ -13,7 +13,8 @@ import java.util.List;
 
 public interface FileHandleController {
     @GetMapping(value = Constant.FILE_LOAD)
-    ResponseEntity<List<FileInfo>> listOfFiles(@RequestParam(value = "serviceType") ServiceType serviceType);
+    ResponseEntity<List<FileInfo>> listOfFiles(
+            @RequestParam(value = "serviceType") ServiceType serviceType);
 
     @GetMapping(value = Constant.FILE_DOWNLOAD)
     ResponseEntity<Resource> downloadFile(
@@ -28,7 +29,8 @@ public interface FileHandleController {
             @RequestParam(value = "contentType") ContentType contentType);
 
     @PostMapping(value = Constant.FILE_UPLOAD)
-    ResponseEntity<String> uploadFile(@RequestParam(value = "file") MultipartFile file,
-                                      @RequestParam(value = "serviceType") ServiceType serviceType,
-                                      @RequestParam(value = "contentType") ContentType contentType);
+    ResponseEntity<String> uploadFile(
+            @RequestParam(value = "file") MultipartFile file,
+            @RequestParam(value = "serviceType") ServiceType serviceType,
+            @RequestParam(value = "contentType") ContentType contentType);
 }

@@ -19,7 +19,8 @@ public class AmazonS3Config {
     public S3Client s3Client() {
         String accessKey = "AKIA6HAFVKA3UIWYR6HC";
         String secretKey = "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";
-        AwsCredentialsProvider awsCredentialsProvider = StaticCredentialsProvider.create(AwsBasicCredentials.create(accessKey, secretKey));
+        AwsCredentialsProvider awsCredentialsProvider = StaticCredentialsProvider
+                .create(AwsBasicCredentials.create(accessKey, secretKey));
 
         return S3Client.builder()
                 .region(Region.of(region))

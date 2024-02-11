@@ -1426,3 +1426,24 @@ java.lang.RuntimeException: File is not found
 18:16:58.663 [http-nio-8080-exec-9] INFO  c.e.f.h.s.i.GCPFileHandleServiceImpl - List of files method
 18:17:34.415 [http-nio-8080-exec-6] INFO  c.e.f.h.s.i.S3FileHandleServiceImpl - List of files method
 18:23:29.729 [http-nio-8080-exec-3] INFO  c.e.f.h.s.i.GCPFileHandleServiceImpl - List of files method
+18:26:44.086 [http-nio-8080-exec-8] INFO  c.e.f.h.s.i.S3FileHandleServiceImpl - List of files method
+18:27:09.944 [http-nio-8080-exec-10] INFO  c.e.f.h.s.i.S3FileHandleServiceImpl - Upload file method
+18:27:11.879 [http-nio-8080-exec-10] INFO  c.e.f.h.s.i.S3FileHandleServiceImpl - Uploaded successfully
+18:27:11.990 [http-nio-8080-exec-5] INFO  c.e.f.h.s.i.S3FileHandleServiceImpl - List of files method
+18:27:17.875 [http-nio-8080-exec-1] INFO  c.e.f.h.s.i.S3FileHandleServiceImpl - Upload file method
+18:27:18.529 [http-nio-8080-exec-1] INFO  c.e.f.h.s.i.S3FileHandleServiceImpl - Uploaded successfully
+18:27:18.648 [http-nio-8080-exec-2] INFO  c.e.f.h.s.i.S3FileHandleServiceImpl - List of files method
+18:27:26.348 [http-nio-8080-exec-9] INFO  c.e.f.h.s.i.S3FileHandleServiceImpl - Upload file method
+18:27:28.051 [http-nio-8080-exec-9] INFO  c.e.f.h.s.i.S3FileHandleServiceImpl - Uploaded successfully
+18:27:28.157 [http-nio-8080-exec-6] INFO  c.e.f.h.s.i.S3FileHandleServiceImpl - List of files method
+18:27:33.619 [http-nio-8080-exec-7] INFO  c.e.f.h.s.i.S3FileHandleServiceImpl - Upload file method
+18:27:34.301 [http-nio-8080-exec-7] INFO  c.e.f.h.s.i.S3FileHandleServiceImpl - Uploaded successfully
+18:27:34.410 [http-nio-8080-exec-3] INFO  c.e.f.h.s.i.S3FileHandleServiceImpl - List of files method
+18:27:46.378 [http-nio-8080-exec-4] INFO  c.e.f.h.s.i.S3FileHandleServiceImpl - Upload file method
+18:27:48.203 [http-nio-8080-exec-4] INFO  c.e.f.h.s.i.S3FileHandleServiceImpl - Uploaded successfully
+18:27:48.326 [http-nio-8080-exec-8] INFO  c.e.f.h.s.i.S3FileHandleServiceImpl - List of files method
+18:28:29.079 [http-nio-8080-exec-10] INFO  c.e.f.h.s.i.S3FileHandleServiceImpl - Download file method
+18:29:09.727 [http-nio-8080-exec-5] INFO  c.e.f.h.s.i.GCPFileHandleServiceImpl - List of files method
+18:29:26.467 [http-nio-8080-exec-1] INFO  c.e.f.h.s.i.GCPFileHandleServiceImpl - Upload file method
+18:29:35.789 [http-nio-8080-exec-1] INFO  c.e.f.h.s.i.GCPFileHandleServiceImpl - Uploaded successfully
+18:29:35.901 [http-nio-8080-exec-2] INFO  c.e.f.h.s.i.GCPFileHandleServiceImpl - List of files method
